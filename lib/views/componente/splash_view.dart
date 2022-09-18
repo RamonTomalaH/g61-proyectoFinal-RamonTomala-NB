@@ -21,7 +21,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Timer.periodic(const Duration(seconds: 4), (Timer timer) {
+    Timer.periodic(const Duration(seconds: 40), (Timer timer) {
       if (currentIndex < 2) {
         currentIndex++;
         pageController.animateToPage(

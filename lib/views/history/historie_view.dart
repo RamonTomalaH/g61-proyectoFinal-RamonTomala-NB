@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:services_uber/views/componente/drawer_view.dart';
 import 'package:services_uber/views/history/widgets/content.dart';
 import 'package:services_uber/views/history/widgets/footer.dart';
@@ -48,7 +46,6 @@ class _HistorieViewState extends State<HistorieView> {
       ),
       body: Stack(
         children: const [
-          //Header(),
           Content(),
           Align(
             alignment: Alignment.bottomCenter,

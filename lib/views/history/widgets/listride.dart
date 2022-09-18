@@ -33,33 +33,7 @@ class ItemRide extends StatelessWidget {
         color: Colors.transparent, //Color.fromARGB(255, 6, 26, 177),
         borderRadius: BorderRadius.circular(15.0),
       ),
-      child:
-
-          // Column(
-          //   children: [
-          //     Image.asset(ride.path, height: 50.0),
-          //     const SizedBox(height: 5.0),
-          //     Text(
-          //       ride.title,
-          //       style: const TextStyle(
-          //         fontSize: 18.0,
-          //         fontWeight: FontWeight.bold,
-          //         color: Colors.black,
-          //       ),
-          //     ),
-          //     const SizedBox(height: 8.0),
-          //     Text(
-          //       ride.description,
-          //       overflow: TextOverflow.ellipsis,
-          //       maxLines: 2,
-          //       style: const TextStyle(
-          //         fontSize: 14.0,
-          //         color: Colors.black26,
-          //       ),
-          //     ),
-          //   ],
-          // ),
-          Card(
+      child: Card(
         color: Colors.white,
         shadowColor: Colors.black12,
         elevation: 0.0,

@@ -10,8 +10,6 @@ class Content extends StatelessWidget {
       alignment: Alignment.topCenter,
       child: Container(
         width: MediaQuery.of(context).size.width * 0.95,
-        //height: MediaQuery.of(context).size.height * 0.90,
-        //alignment: Alignment(200.0, 200.0),
         padding: const EdgeInsets.only(top: 20.0),
         decoration: const BoxDecoration(
           color: Color.fromRGBO(249, 251, 253, 1.0),
@@ -47,15 +45,13 @@ class Content extends StatelessWidget {
                         ),
                         elevation: 0,
                         margin: const EdgeInsets.only(right: 1),
-
-                        // ignore: prefer_const_literals_to_create_immutables
-                        child: Column(children: [
-                          const CircleAvatar(
+                        child: Column(children: const [
+                          CircleAvatar(
                             radius: 50.0,
                             backgroundImage:
                                 AssetImage("assets/image/staria.jpg"),
                           ),
-                          const Text(
+                          Text(
                             "Van",
                             style: TextStyle(
                               fontSize: 18.0,
@@ -64,12 +60,6 @@ class Content extends StatelessWidget {
                             ),
                           ),
                         ]),
-
-                        // Image.asset(
-                        //   'assets/image/staria.jpg',
-                        //   fit: BoxFit.cover,
-                        //   width: 100,
-                        // ),
                       ),
                       Card(
                         shape: RoundedRectangleBorder(

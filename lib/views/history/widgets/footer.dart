@@ -9,23 +9,13 @@ class Footer extends StatelessWidget {
     String ruta = "";
     return Container(
       color: Color.fromARGB(255, 187, 205, 242),
-      //alignment: FractionalOffset.bottomCenter,
-      //color: Colors.amber,
       width: double.infinity,
       height: MediaQuery.of(context).size.height * 0.11,
       padding: const EdgeInsets.only(top: 20.0),
-      margin: const EdgeInsets.only(
-          //top: 80.0,
-          //left: 20.0,
-          // right: 20.0,
-          //bottom: 10
-          ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
-
-        //crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
               margin: const EdgeInsets.only(
@@ -36,7 +26,6 @@ class Footer extends StatelessWidget {
               child: const SizedBox(
                 width: 270.0,
                 child: TextField(
-                  //scrollPadding: EdgeInsets.all(60.0),
                   decoration: InputDecoration(
                     hintText: "A donde vas?",
                     iconColor: Colors.red,
@@ -46,10 +35,8 @@ class Footer extends StatelessWidget {
                       ),
                     ),
                   ),
-                  //onChanged: (value) => ruta = value,
                 ),
               )),
-          //const SizedBox(height: 20.0),
           GestureDetector(
             onTap: () {
               print("Click Login [ruta: $ruta -]");
@@ -70,7 +57,6 @@ class Footer extends StatelessWidget {
               ),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                //color: AppColors.kPrimary,
                 color: const Color.fromARGB(255, 0, 17, 47),
                 borderRadius: BorderRadius.circular(20.0),
               ),
